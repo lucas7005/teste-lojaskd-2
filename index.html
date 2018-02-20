@@ -1,0 +1,111 @@
+<!--Teste Front-End Nº 2 - Formulário - Lojas-KD 02/2018-->
+<!--Autor: Lucas Borim-->
+
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Home</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" ></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" ></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.13/jquery.mask.js"></script>
+      <script  src="assets/js/main.js"></script>
+   </head>
+   <body>
+      <div class="main">
+         <div class="col-md-7">
+            <form>
+               <div class="row">
+                  <div class="form-group col-md-3">
+                     <label for="CEP">CEP</label>
+                     <input type="text" class="form-control" id="cep" placeholder="xx.xxx-xxx" required>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="form-group col-md-4">
+                     <label for="tipo">Identificação</label>
+                     <select class="form-control" id="tipo" required>
+                        <option></option>
+                        <option>Casa</option>
+                        <option>Apartamento</option>
+                        <option>Comercial</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="form-group col-md-7">
+                     <label for="endereco">Endereço</label>
+                     <input type="text" class="form-control" id="endereco" placeholder="Ex: Rua 123..." required disabled>
+                  </div>
+                  <div class="form-group col-md-2" >
+                     <label for="numero">Nº</label>
+                     <input type="text" class="form-control" id="numero" placeholder="Ex: 123" required>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="form-group col-md-5">
+                     <label for="complemento">Complemento</label>
+                     <input type="text" class="form-control" id="complemento" placeholder="Ex: Apto nº 123...">
+                  </div>
+                  <div class="form-group col-md-4">
+                     <label for="bairro">Bairro</label>
+                     <input type="text" class="form-control" id="bairro" placeholder="Ex: Jd Primavera" disabled>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="form-group col-md-4">
+                     <label for="estado">Estado</label>
+                     <select id="uf" class="form-control" required disabled>
+                        <option></option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                     </select>
+                  </div>
+                  <div class="form-group col-md-5">
+                     <label for="cidade">Cidade</label>
+                     <input type="text" class="form-control" id="cidade" placeholder="Ex: Pinhais" required disabled>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="form-group col-md-5">
+                     <label for="referencia">Referência</label>
+                     <input type="text" class="form-control" id="referencia" placeholder="Ex: Próximo à casa verde">
+                  </div>
+               </div>
+               <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+         </div>
+      </div>
+   </body>
+</html>
