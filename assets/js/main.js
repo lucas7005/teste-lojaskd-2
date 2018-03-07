@@ -8,7 +8,7 @@
 
 $(document).ready(function() {
 
-    function limpa_formulário_cep() {
+    function limpa_formulario_cep() {
         // Limpa valores do formulário de cep.
         $("#endereco").val("");
         $("#bairro").val("");
