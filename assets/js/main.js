@@ -56,7 +56,7 @@ $(document).ready(function() {
                     } //end if.
                     else {
                         //CEP pesquisado não foi encontrado.
-                        limpa_formulário_cep();
+                        limpa_formulario_cep();
                         alert("CEP não encontrado, insira o endereço manualmente");
                         //habilita o campo para inclusão manual
                         $('#endereco').prop('disabled', false);
@@ -68,13 +68,13 @@ $(document).ready(function() {
             } //end if.
             else {
                 //cep é inválido.
-                limpa_formulário_cep();
+                limpa_formulario_cep();
                 alert("Formato de CEP inválido.");
             }
         } //end if.
         else {
             //cep sem valor, limpa formulário.
-            limpa_formulário_cep();
+            limpa_formulario_cep();
         }
     });
 });
